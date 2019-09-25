@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  padding: 1rem 1rem 1rem 1rem;
+}
+a {
+  margin: 0.5rem 5px 5px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+h1 {
+  text-align: center;
+  margin: 0.5rem auto 0.5rem auto;
+  color: white;
+  font-size: 3rem;
+}
+#container {
+  background-color: black;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding: 2rem;
+  color: green;
+}
+.info {
+  border: 1px solid silver;
+  margin: 0.5rem 1rem 2rem 1rem;
+  padding: 2rem;
+  background-color: white;
+  font-size: 1.5rem;
+}
+#headerBar {
+  display: inline;
+}
+
+@media only screen and (min-width: 426px) {
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul li {
+    font-size: 1.2em;
+    color: rgb(56, 53, 53);
+    line-height: 1.6;
+  }
+  .info {
+    max-width: 20%;
+  }
+}
