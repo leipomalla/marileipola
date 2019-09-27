@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  padding: 1rem;
+}
+#headerBar{
+  display: inline;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1rem;
+}
+#headerBar a{
+  text-decoration: none;
+  color: white;
+}
+h1{
+  font-size: 2rem;
+  color: silver;
+}
+#photodiv{
+  margin: 2rem;
+}
+img{
+  height: 15vw;
+  width: auto;
+  border: grey 1px solid;
+  border-radius: 50%;
+}
+#container{
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
+#container p{
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.5em;
+  
+}
+#container ul {
+  margin-top: 2rem;
+  color: white;
+}
+.material-icons{
+  margin-right: 1.5rem;
+}
+

@@ -1,0 +1,6 @@
+-Vaihda fontti otsikoihin ja sivuvalikkoon ja kiveksiin
+-Pikkupallot kotivalikkoon
+- Aboutme: paddingia vasemmalle, laatikko pienemmäksi, listat pois
+-Isojen pallojen tekstit keskelle, marginit tasaisiksi, isompi fontti (1.3x)
+
+
