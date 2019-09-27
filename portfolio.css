@@ -13,6 +13,7 @@ h1{
 }
 #header p{
   font-size: 1rem;
+  
 }
 #navigation{
   display: block;
@@ -55,4 +56,29 @@ h1{
 }
 #navigation_link_fourth{
   background-color: #A9A9A9;
+}
+@media only screen and (min-width: 426px) {
+#header{
+  margin-left: 5%;
+  margin-top: 5%;
+  text-align: unset;
+}
+h1{
+  font-size: 2rem;
+  margin: 0;
+}
+#header p{
+margin-top: 1rem;
+font-size: 1.5rem;
+}
+#navigation{
+  display: inline-flex;
+  max-width: 97%;
+  margin-right: 16rem;
+  margin-left: 16rem;
+  
+}
+.navigation_items{
+  margin: 0.5rem;
+}
 }
