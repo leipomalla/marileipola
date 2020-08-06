@@ -1,0 +1,33 @@
+body {
+    max-width: 600px;
+    margin: auto;
+    color: darkslategray;
+    background-color: turquoise
+}
+
+.field {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 10px 10px;
+}
+
+.field label {
+    width: 100px;
+}
+
+.field div {
+    width: 100%;
+}
+
+.field input[type="text"] {
+    width: 100%;
+}
+
+#button {
+    margin: 10px 10px 10px 10px;
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 10px 10px;
+}

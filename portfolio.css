@@ -6,14 +6,15 @@ body{
   color: lightgrey;
   margin-top: 8%;
   margin-bottom: 8%;
+  font-weight: 100;
 }
 h1{
-  font-size: 1.5rem;
+  font-size: 2em;
   margin: 2%;
+  font-family: 'Open Sans', sans-serif;
 }
 #header p{
-  font-size: 1rem;
-  
+  font-size: 1.5em;
 }
 #navigation{
   display: block;
@@ -38,9 +39,11 @@ h1{
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    font-family: 'Open Sans', sans-serif;
+    
 }
-.navigation_items a{
+.navigation_items p {
   text-decoration: none;
   color: black;
 }
@@ -62,6 +65,7 @@ h1{
   margin-left: 5%;
   margin-top: 5%;
   text-align: unset;
+  margin-bottom: 0;
 }
 h1{
   font-size: 2rem;
@@ -72,13 +76,39 @@ margin-top: 1rem;
 font-size: 1.5rem;
 }
 #navigation{
-  display: inline-flex;
-  max-width: 97%;
-  margin-right: 16rem;
-  margin-left: 16rem;
+  width: 480px;
+  margin-right: auto;
+  margin-left: auto;
   
 }
 .navigation_items{
-  margin: 0.5rem;
+ 
+  border: 0;
+  border-radius: 50%;
+  width: 200px;
+  height:200px;
+  margin: 20px;
+  position: relative;
+  font-size: 1.2rem;
+}
+.navigation_items:hover{
+ 
+  z-index: 5;
+  border: 0;
+  width: 240px;
+  height:240px;
+  margin: 0;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+.navigation_items p{
+  font-family: 'Open Sans', sans-serif;
+}
+.container{
+  
+  float: left;
+  width: 240px;
+  height: 240px;
+  margin: 0;
 }
 }

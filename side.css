@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+.md-48{
+  font-size: 36px !important;
+}
 body{
   background-color: black;
   padding: 1rem;
@@ -17,23 +20,39 @@ body{
   text-decoration: none;
   color: white;
 }
-h1{
-  font-size: 2rem;
-  color: silver;
-}
+
 #photodiv{
-  margin: 2rem;
+  width:50vw;
+  margin-left: auto;
+  margin-right: auto;
 }
-img{
-  height: 15vw;
-  width: auto;
+#portraitImg{
+  width: 100%;
+  height: auto;
   border: grey 1px solid;
   border-radius: 50%;
 }
-#container{
+
+h1 {
+  color:silver;
+  font-size:2.5em;
+  font-family: 'Open Sans', sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+ .info{
+   width: 80vw;
+  margin-right: auto;
+  margin-left: auto;
+
+ }
+/*#container{
   margin-left: 3rem;
   margin-right: 2rem;
-}
+}*/
 #container p{
   color: white;
   margin-right: auto;
@@ -48,4 +67,106 @@ img{
 .material-icons{
   margin-right: 1.5rem;
 }
+i{
+  padding-top: 10px;
+  margin-top: 20px;
+}
+#navigation{
+  display: block;
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.navigation_items{
+  border: 1px solid grey;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  position: relative;
+  }
 
+.navigation_items p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+#navigation_link_first{
+  background-color: #D3D3D3;
+}
+#navigation_link_second{
+  background-color:#A9A9A9;
+}
+#navigation_link_third{
+  background-color: #D3D3D3;
+}
+#navigation_link_fourth{
+  background-color: #A9A9A9;
+}
+table {
+  color:white;
+}
+
+td a{
+  text-decoration: none;
+  color: white;
+}
+.infoTxt {
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 426px) {
+#photodiv{
+  width:20vw;
+  
+}
+.info{
+   width: 50vw;
+}
+
+#navigation{
+  width: 480px;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+.navigation_items{
+ 
+  border: 0;
+  border-radius: 50%;
+  width: 200px;
+  height:200px;
+  margin: 20px;
+  position: relative;
+  font-size: 1.2rem;
+}
+.navigation_items:hover{
+ 
+  z-index: 5;
+  border: 0;
+  width: 240px;
+  height:240px;
+  margin: 0;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+.navigation_items p{
+  font-family: 'Open Sans', sans-serif;
+}
+.container{
+  
+  float: left;
+  width: 240px;
+  height: 240px;
+  margin: 0;
+}
+}

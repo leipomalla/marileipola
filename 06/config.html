@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Asetukset</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='config.css'>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Asetukset</h1>
+  <form>
+    <div class="field">
+      <label for="title">Otsikko</label>
+      <div class="input">
+        <input id="otsikkoconfig" name="title" type="text">
+      </div>
+    </div>
+    <div class="field">
+      <label for="date">Määräaika</label>
+      <div class="input">
+        <input id="datekonfig" name="date" type="date" min="2019-05-20">
+        <input id="timekonfig" name="time" type="time" value="00:00">
+      </div>
+    </div>
+    <div id="viestidiv" class="input">
+      <label for="message">Viesti, kun määräaika on saavutettu</label>
+
+      <input id="viesticonfig" name="message" type="text">
+    </div>
+    <div id="button" class="input">
+      <button onclick="aseta()">Aseta</button>
+    </div>
+  </form>
+  <br>
+  <br>
+  <br>
+
+  <div id="redirect">
+    <p>Syötettyäsi tiedot voit siirtyä ihailemaan <a
+        href="http://46.101.138.164/portfolio/06/lomalaskin.html">laskuria.</a></p>
+  </div>
+
+  <script>
+
+    function aseta() {
+      event.preventDefault()
+      var title = document.getElementById("otsikkoconfig").value;
+      var titleJSON = JSON.stringify(title);
+      localStorage.setItem("varastoOtsikko", titleJSON);
+
+      var date = document.getElementById("datekonfig").value;
+      var time = document.getElementById("timekonfig").value;
+      var datetime = [date, time];
+      //console.log(Array.isArray(datetime));
+      //console.log(datetime);
+      var datetimeJSON = JSON.stringify(datetime);
+      //console.log(datetimeJSON);
+      localStorage.setItem("varastoDateTime", datetimeJSON);
+
+      // var timeJSON = JSON.stringify(time);
+      //localStorage.setItem("varastoTime", timeJSON);
+
+      var viesti = document.getElementById("viesticonfig").value;
+      var messageJSON = JSON.stringify(viesti);
+      localStorage.setItem("varastoViesti", messageJSON);
+    }
+
+  </script>
+
+
+</body>
+
+</html>
